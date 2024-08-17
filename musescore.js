@@ -140,7 +140,7 @@ function Musescore(settings) {
 		case 4: // octave matching
 			
 			// settings
-			this.difference = 31;
+			this.difference = 31; // change to perfect fifth difference
 			this.evenlyPitchShifted = 1;
 			this.instruments = ['piano'];
 			this.path = 'data/musescore/library/piano/pitchshifted/';
@@ -754,7 +754,7 @@ Musescore.prototype.preload = function () {
 						this.stimuli2[a][b][c] = [];
 						let dir = '';
 						if (c<36) {dir = '_n'};
-						loadAudio2(a,b,c,dir,root+12);
+						loadAudio2(a,b,c,dir,root+5);
 					}		
 					
 					break;
